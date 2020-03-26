@@ -1,5 +1,5 @@
 # dbconf
-script ini bertujuan untuk memudahkan membuat berbagai macam konfigurasi di debian server 8
+script ini bertujuan untuk memudahkan membuat berbagai macam konfigurasi di linux server
 
 # configurasi
   1. Konfigurasi IP Address
@@ -9,7 +9,7 @@ script ini bertujuan untuk memudahkan membuat berbagai macam konfigurasi di debi
   5. Konfigurasi FTP
 
 # Requirement
-  install python versi 3 di debian
+  install python versi 3
   $ apt-get install python3 
   
  # Cara menggunakan
