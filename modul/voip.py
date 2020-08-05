@@ -11,9 +11,9 @@ def voip():
 	username=input("Username untuk VOIP: ")
 	secret=input("Secret (password): ")
 
-	asterisk="""
-	\n[general]\nport = 5060\nbindaddr = 0.0.0.0\ncontext = others\n[{}]\ntype = friend\ncontext = {}\nusername = {}\nsecret = {}\nhost = dynamic
-	""".format(notlp,context,username,secret)
+	asterisk=f"""
+	\n[general]\nport = 5060\nbindaddr = 0.0.0.0\ncontext = others\n[{notlp}]\ntype = friend\ncontext = {context}\nusername = {username}\nsecret = {secret}\nhost = dynamic
+	"""
 	fileVoip=open(" /etc/asterisk/sip.conf","a")
 	fileVoip.write(asterisk)
 	fileVoip.close()
